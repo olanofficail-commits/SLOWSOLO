@@ -201,30 +201,30 @@
             <div class="text-[11px] text-matcha-600 font-medium">● Free Tier Mode (Spark)</div>
           </div>
           <nav class="space-y-1 text-xs font-medium">
-            <button class="w-full text-left px-3 py-2 rounded-xl bg-sand-900 text-white flex items-center gap-2">
+            <button type="button" data-menu="dashboard" class="admin-menu w-full text-left px-3 py-2 rounded-xl bg-sand-900 text-white flex items-center gap-2">
               <span>📊 ภาพรวม (Dashboard)</span>
             </button>
-            <button class="w-full text-left px-3 py-2 rounded-xl text-sand-700 hover:bg-sand-50 flex items-center justify-between">
+            <button type="button" data-menu="orders" class="admin-menu w-full text-left px-3 py-2 rounded-xl text-sand-700 hover:bg-sand-50 flex items-center justify-between">
               <span class="flex items-center gap-2">📦 ออเดอร์ (Orders)</span>
               <span class="bg-amber-100 text-amber-800 font-bold px-1.5 py-0.2 rounded-full text-[10px]">1 รอตรวจ</span>
             </button>
-            <button class="w-full text-left px-3 py-2 rounded-xl text-sand-700 hover:bg-sand-50 flex items-center gap-2">
+            <button type="button" data-menu="products" class="admin-menu w-full text-left px-3 py-2 rounded-xl text-sand-700 hover:bg-sand-50 flex items-center gap-2">
               <span>🏷️ สินค้า (Products)</span>
             </button>
-            <button class="w-full text-left px-3 py-2 rounded-xl text-sand-700 hover:bg-sand-50 flex items-center gap-2">
+            <button type="button" data-menu="pricing" class="admin-menu w-full text-left px-3 py-2 rounded-xl text-sand-700 hover:bg-sand-50 flex items-center gap-2">
               <span>🧮 คำนวณต้นทุน (Pricing)</span>
             </button>
-            <button class="w-full text-left px-3 py-2 rounded-xl text-sand-700 hover:bg-sand-50 flex items-center justify-between">
+            <button type="button" data-menu="approvals" class="admin-menu w-full text-left px-3 py-2 rounded-xl text-sand-700 hover:bg-sand-50 flex items-center justify-between">
               <span class="flex items-center gap-2">✅ คิวอนุมัติ (Approvals)</span>
               <span class="bg-red-100 text-red-700 font-bold px-1.5 py-0.2 rounded-full text-[10px]">2</span>
             </button>
-            <button class="w-full text-left px-3 py-2 rounded-xl text-sand-700 hover:bg-sand-50 flex items-center gap-2">
+            <button type="button" data-menu="logistics" class="admin-menu w-full text-left px-3 py-2 rounded-xl text-sand-700 hover:bg-sand-50 flex items-center gap-2">
               <span>🚚 ขนส่ง 3 ขา (Logistics)</span>
             </button>
-            <button class="w-full text-left px-3 py-2 rounded-xl text-sand-700 hover:bg-sand-50 flex items-center gap-2">
+            <button type="button" data-menu="finance" class="admin-menu w-full text-left px-3 py-2 rounded-xl text-sand-700 hover:bg-sand-50 flex items-center gap-2">
               <span>💰 การเงิน & กำไร (Finance)</span>
             </button>
-            <button class="w-full text-left px-3 py-2 rounded-xl text-sand-700 hover:bg-sand-50 flex items-center gap-2">
+            <button type="button" data-menu="settings" class="admin-menu w-full text-left px-3 py-2 rounded-xl text-sand-700 hover:bg-sand-50 flex items-center gap-2">
               <span>⚙️ ตั้งค่าร้าน (Settings)</span>
             </button>
           </nav>
@@ -243,7 +243,7 @@
         <main class="flex-1 space-y-6">
           
           <!-- Key Metrics -->
-          <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+          <div data-sec="dashboard finance" class="grid grid-cols-2 lg:grid-cols-4 gap-4">
             <div class="bg-white p-4 rounded-2xl border border-sand-200 shadow-sm">
               <div class="text-xs text-sand-500 font-medium">ยอดขายรวมเดือนนี้</div>
               <div class="text-xl sm:text-2xl font-extrabold text-sand-900 mt-1">4,850,000 ₭</div>
@@ -272,7 +272,7 @@
           </div>
 
           <!-- Pending Slip Verification Card -->
-          <div class="bg-white rounded-2xl border border-amber-200 p-5 shadow-sm">
+          <div data-sec="dashboard approvals orders" class="bg-white rounded-2xl border border-amber-200 p-5 shadow-sm">
             <div class="flex items-center justify-between pb-3 border-b border-sand-100">
               <div class="flex items-center gap-2">
                 <span class="w-2.5 h-2.5 rounded-full bg-amber-500 animate-pulse"></span>
@@ -315,7 +315,7 @@
           </div>
 
           <!-- Interactive Landed Cost Calculator -->
-          <div class="bg-white rounded-2xl border border-sand-200 p-5 shadow-sm">
+          <div data-sec="dashboard pricing" class="bg-white rounded-2xl border border-sand-200 p-5 shadow-sm">
             <div class="pb-3 border-b border-sand-100 flex items-center justify-between">
               <div>
                 <h3 class="font-bold text-sm text-sand-900">
@@ -407,7 +407,7 @@
           </div>
 
           <!-- Order Status Timeline Demo -->
-          <div class="bg-white rounded-2xl border border-sand-200 p-5 shadow-sm">
+          <div data-sec="dashboard logistics" class="bg-white rounded-2xl border border-sand-200 p-5 shadow-sm">
             <h3 class="font-bold text-sm text-sand-900 mb-4">สถานะการขนส่งพัสดุ 3 ช่วง (Tracking Pipeline)</h3>
             <div class="flex items-center justify-between text-xs overflow-x-auto pb-2 gap-2">
               <div class="flex flex-col items-center text-center min-w-[70px]">
@@ -444,6 +444,74 @@
                 <span class="text-[10px] text-sand-400">Anousith</span>
               </div>
             </div>
+          </div>
+
+        
+          <!-- ===== Admin extra panels (menu) ===== -->
+          <div data-sec="orders" class="bg-white rounded-2xl border border-sand-200 p-5 shadow-sm hidden">
+            <div class="flex items-center justify-between pb-3 border-b border-sand-100">
+              <h3 class="font-bold text-sm text-sand-900">📦 รายการออเดอร์ทั้งหมด</h3>
+              <span class="text-xs text-sand-500">5 รายการล่าสุด</span>
+            </div>
+            <div class="overflow-x-auto"><table class="w-full text-xs mt-2">
+              <thead><tr><th class="text-left py-2 px-2 font-semibold text-sand-500">เลขออเดอร์</th><th class="text-left py-2 px-2 font-semibold text-sand-500">ลูกค้า</th><th class="text-left py-2 px-2 font-semibold text-sand-500 text-right">ยอด</th><th class="text-left py-2 px-2 font-semibold text-sand-500">สถานะ</th></tr></thead>
+              <tbody><tr class="border-t border-sand-100"><td class="py-2 px-2 font-bold">SD-2611-0089</td><td class="py-2 px-2">ນ້ອງດາວ</td><td class="py-2 px-2 text-right">315,000 ₭</td><td class="py-2 px-2"><span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-amber-100 text-amber-800">รอตรวจสลิป</span></td></tr><tr class="border-t border-sand-100"><td class="py-2 px-2 font-bold">SD-2611-0088</td><td class="py-2 px-2">ທ້າວ ສົມພອນ</td><td class="py-2 px-2 text-right">540,000 ₭</td><td class="py-2 px-2"><span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-green-100 text-green-800">ชำระแล้ว</span></td></tr><tr class="border-t border-sand-100"><td class="py-2 px-2 font-bold">SD-2611-0087</td><td class="py-2 px-2">ນາງ ແກ້ວ</td><td class="py-2 px-2 text-right">290,000 ₭</td><td class="py-2 px-2"><span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-blue-100 text-blue-800">อยู่ระหว่างขนส่ง</span></td></tr><tr class="border-t border-sand-100"><td class="py-2 px-2 font-bold">SD-2611-0086</td><td class="py-2 px-2">ທ້າວ ບຸນມີ</td><td class="py-2 px-2 text-right">185,000 ₭</td><td class="py-2 px-2"><span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-matcha-100 text-matcha-800">ถึงลาวแล้ว</span></td></tr><tr class="border-t border-sand-100"><td class="py-2 px-2 font-bold">SD-2611-0085</td><td class="py-2 px-2">ນາງ ພອນ</td><td class="py-2 px-2 text-right">620,000 ₭</td><td class="py-2 px-2"><span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-sand-100 text-sand-800">ส่งสำเร็จ</span></td></tr></tbody>
+            </table></div>
+          </div>
+
+          <div data-sec="products" class="bg-white rounded-2xl border border-sand-200 p-5 shadow-sm hidden">
+            <div class="flex items-center justify-between pb-3 border-b border-sand-100">
+              <h3 class="font-bold text-sm text-sand-900">🏷️ สินค้าในร้าน</h3>
+              <button type="button" id="btn-admin-add-product" class="px-3 py-1.5 rounded-lg bg-matcha-600 hover:bg-matcha-700 text-white text-xs font-bold">+ เพิ่มสินค้า</button>
+            </div>
+            <div id="admin-product-list" class="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-3"></div>
+            <div id="admin-add-product-msg" class="hidden mt-3 p-3 bg-sand-50 border border-sand-200 rounded-xl text-xs text-sand-600 text-center">ฟอร์มเพิ่มสินค้าจะใช้งานได้เมื่อเชื่อมฐานข้อมูลจริง (เดโมนี้แสดงตัวอย่างเท่านั้น)</div>
+          </div>
+
+          <div data-sec="approvals" class="bg-white rounded-2xl border border-sand-200 p-5 shadow-sm hidden">
+            <h3 class="font-bold text-sm text-sand-900 pb-3 border-b border-sand-100">✅ คำขออนุมัติอื่นๆ</h3>
+            <div id="approval-refund" class="mt-3 p-4 rounded-xl bg-red-50/50 border border-red-100 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+              <div class="text-xs">
+                <div class="font-bold text-sand-900">ขอคืนเงิน • SD-2611-0081</div>
+                <div class="text-sand-600 mt-0.5">ลูกค้าขอคืนเงิน 120,000 ₭ (สินค้าแตกเสียหาย)</div>
+              </div>
+              <div class="flex gap-2">
+                <button type="button" data-approve="approval-refund" class="px-4 py-2 rounded-xl bg-green-600 hover:bg-green-700 text-white text-xs font-bold">✓ อนุมัติ</button>
+                <button type="button" data-approve="approval-refund" class="px-3 py-2 rounded-xl bg-sand-200 hover:bg-sand-300 text-sand-700 text-xs font-bold">ปฏิเสธ</button>
+              </div>
+            </div>
+            <div id="approvals-empty" class="hidden mt-3 p-3 bg-green-50 border border-green-200 rounded-xl text-green-800 text-xs text-center font-bold">✓ ไม่มีรายการรออนุมัติแล้ว</div>
+          </div>
+
+          <div data-sec="logistics" class="bg-white rounded-2xl border border-sand-200 p-5 shadow-sm hidden">
+            <h3 class="font-bold text-sm text-sand-900 pb-3 border-b border-sand-100">🚚 สรุปการขนส่ง 3 ขา</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-3 text-xs">
+              <div class="p-3 rounded-xl bg-sand-50 border border-sand-200"><div class="font-bold text-sand-900">ขา 1: ร้านจีน → โกดังจีน</div><div class="text-sand-600 mt-1">2 พัสดุกำลังเดินทาง</div></div>
+              <div class="p-3 rounded-xl bg-sand-50 border border-sand-200"><div class="font-bold text-sand-900">ขา 2: โกดังจีน → เวียงจันทน์ (CLS)</div><div class="text-sand-600 mt-1">1 ล็อต • ถึงประมาณ 14/11</div></div>
+              <div class="p-3 rounded-xl bg-sand-50 border border-sand-200"><div class="font-bold text-sand-900">ขา 3: ส่งถึงลูกค้า</div><div class="text-sand-600 mt-1">1 พัสดุรอนัดส่ง</div></div>
+            </div>
+          </div>
+
+          <div data-sec="finance" class="bg-white rounded-2xl border border-sand-200 p-5 shadow-sm hidden">
+            <h3 class="font-bold text-sm text-sand-900 pb-3 border-b border-sand-100">💰 สรุปการเงินเดือนนี้</h3>
+            <div class="space-y-2 text-xs mt-3">
+              <div class="flex justify-between"><span class="text-sand-600">ยอดขายรวม</span><strong>4,850,000 ₭</strong></div>
+              <div class="flex justify-between"><span class="text-sand-600">ต้นทุนสินค้า + ค่าส่ง</span><strong class="text-red-700">−3,180,000 ₭</strong></div>
+              <div class="flex justify-between"><span class="text-sand-600">ค่าธรรมเนียม / อื่นๆ</span><strong class="text-red-700">−250,000 ₭</strong></div>
+              <div class="flex justify-between border-t border-sand-200 pt-2"><span class="font-bold text-sand-900">กำไรสุทธิ</span><strong class="text-matcha-700 text-sm">1,420,000 ₭</strong></div>
+            </div>
+          </div>
+
+          <div data-sec="settings" class="bg-white rounded-2xl border border-sand-200 p-5 shadow-sm hidden">
+            <h3 class="font-bold text-sm text-sand-900 pb-3 border-b border-sand-100">⚙️ ตั้งค่าร้าน</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-3 text-xs">
+              <label class="block"><span class="text-sand-600">ชื่อร้าน</span><input type="text" value="SLOWSOLO" class="mt-1 w-full px-3 py-1.5 border border-sand-300 rounded-lg"></label>
+              <label class="block"><span class="text-sand-600">เบอร์ WhatsApp</span><input type="text" value="020 5555 1234" class="mt-1 w-full px-3 py-1.5 border border-sand-300 rounded-lg"></label>
+              <label class="block"><span class="text-sand-600">บัญชีรับเงิน BCEL One</span><input type="text" value="xxx-xx-xxxxx" class="mt-1 w-full px-3 py-1.5 border border-sand-300 rounded-lg"></label>
+              <label class="block"><span class="text-sand-600">ค่าส่งในลาว (₭)</span><input type="number" value="25000" class="mt-1 w-full px-3 py-1.5 border border-sand-300 rounded-lg"></label>
+            </div>
+            <button type="button" id="btn-save-settings" class="mt-4 px-4 py-2 rounded-xl bg-sand-900 hover:bg-sand-800 text-white text-xs font-bold">บันทึก</button>
+            <span id="settings-saved" class="hidden ml-2 text-xs text-green-700 font-bold">✓ บันทึกแล้ว (เดโม)</span>
           </div>
 
         </main>
@@ -1003,6 +1071,53 @@
 
       renderProducts();
     }
+  
+    // ===== Admin sidebar menu =====
+    function showAdminSection(key) {
+      document.querySelectorAll('#view-admin .admin-menu').forEach(b => {
+        const on = b.dataset.menu === key;
+        b.classList.toggle('bg-sand-900', on);
+        b.classList.toggle('text-white', on);
+        b.classList.toggle('text-sand-700', !on);
+        b.classList.toggle('hover:bg-sand-50', !on);
+      });
+      document.querySelectorAll('#view-admin [data-sec]').forEach(el => {
+        el.classList.toggle('hidden', !el.dataset.sec.split(' ').includes(key));
+      });
+      if (key === 'products') renderAdminProducts();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function renderAdminProducts() {
+      const box = document.getElementById('admin-product-list');
+      box.innerHTML = PRODUCTS.map(p => `
+        <div class="flex items-center gap-3 p-3 rounded-xl border border-sand-200 bg-sand-50">
+          <img src="${p.img}" alt="" class="w-14 h-14 rounded-lg object-cover shrink-0">
+          <div class="min-w-0 text-xs">
+            <div class="font-bold text-sand-900 truncate">${p.title.th}</div>
+            <div class="text-sand-500">${p.category}</div>
+            <div class="font-bold text-matcha-700 mt-0.5">${formatKip(p.priceKip)}</div>
+          </div>
+        </div>`).join('');
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('#view-admin .admin-menu').forEach(b => {
+        b.addEventListener('click', () => showAdminSection(b.dataset.menu));
+      });
+      document.querySelectorAll('[data-approve]').forEach(b => {
+        b.addEventListener('click', () => {
+          document.getElementById(b.dataset.approve).classList.add('hidden');
+          document.getElementById('approvals-empty').classList.remove('hidden');
+        });
+      });
+      document.getElementById('btn-admin-add-product').addEventListener('click', () => {
+        document.getElementById('admin-add-product-msg').classList.remove('hidden');
+      });
+      document.getElementById('btn-save-settings').addEventListener('click', () => {
+        document.getElementById('settings-saved').classList.remove('hidden');
+      });
+    });
   </script>
 </body>
 </html>
