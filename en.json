@@ -1,0 +1,48 @@
+{
+  "store": {
+    "brand_name": "SLOWSOLO",
+    "tagline": "Curated lifestyle & goods imported from China",
+    "home": "Home",
+    "products": "Products",
+    "cart": "Cart",
+    "checkout": "Checkout",
+    "tracking": "Order Tracking",
+    "search_placeholder": "Search products...",
+    "add_to_cart": "Add to Cart",
+    "buy_now": "Buy Now",
+    "out_of_stock": "Out of Stock",
+    "preorder_badge": "Pre-order (10-15 days)",
+    "price": "Price",
+    "quantity": "Quantity",
+    "total": "Total",
+    "shipping_fee": "Shipping",
+    "order_code": "Order Code",
+    "customer_info": "Customer Information",
+    "name": "Full Name",
+    "phone": "Phone / WhatsApp",
+    "address": "Delivery Address",
+    "payment_instructions": "Transfer via Bank QR and upload transfer slip",
+    "upload_slip": "Upload Slip",
+    "submit_order": "Confirm Order",
+    "rules": {
+      "lead_time": "Pre-order delivery takes ~10–15 days",
+      "payment": "100% upfront payment required",
+      "claim": "Report issues/claims within 24 hours of receipt"
+    }
+  },
+  "admin": {
+    "dashboard": "Overview",
+    "products": "Products",
+    "orders": "Orders",
+    "customers": "Customers",
+    "finance": "Finance",
+    "inventory": "Inventory",
+    "marketing": "Marketing",
+    "ai_departments": "AI Departments",
+    "logistics": "Logistics",
+    "settings": "Settings",
+    "approvals": "Approvals",
+    "pending_slips": "Pending Slips",
+    "estimated_profit": "Est. Profit"
+  }
+}

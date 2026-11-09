@@ -1,0 +1,48 @@
+{
+  "store": {
+    "brand_name": "SLOWSOLO",
+    "tagline": "สินค้านำเข้าจากจีน คัดสรรพิเศษ เพื่อชีวิตที่เรียบง่าย",
+    "home": "หน้าแรก",
+    "products": "สินค้าทั้งหมด",
+    "cart": "ตะกร้าสินค้า",
+    "checkout": "ชำระเงิน",
+    "tracking": "ติดตามสถานะ",
+    "search_placeholder": "ค้นหาสินค้า...",
+    "add_to_cart": "เพิ่มลงตะกร้า",
+    "buy_now": "สั่งซื้อทันที",
+    "out_of_stock": "สินค้าหมดชั่วคราว",
+    "preorder_badge": "พรีออเดอร์ (10-15 วัน)",
+    "price": "ราคา",
+    "quantity": "จำนวน",
+    "total": "ยอดรวม",
+    "shipping_fee": "ค่าจัดส่ง",
+    "order_code": "รหัสคำสั่งซื้อ",
+    "customer_info": "ข้อมูลผู้รับ",
+    "name": "ชื่อ-นามสกุล",
+    "phone": "เบอร์โทรศัพท์ (WhatsApp)",
+    "address": "ที่อยู่จัดส่ง",
+    "payment_instructions": "โอนเงินผ่าน QR / บัญชีธนาคาร แล้วแนบสลิป",
+    "upload_slip": "อัปโหลดสลิปการโอนเงิน",
+    "submit_order": "ยืนยันการสั่งซื้อ",
+    "rules": {
+      "lead_time": "สินค้ารอของประมาณ 10–15 วัน",
+      "payment": "ชำระเงินเต็มจำนวน 100%",
+      "claim": "แจ้งเคลมได้ภายใน 24 ชม. หลังจากได้รับพัสดุ"
+    }
+  },
+  "admin": {
+    "dashboard": "ภาพรวม",
+    "products": "สินค้า",
+    "orders": "คำสั่งซื้อ",
+    "customers": "ลูกค้า",
+    "finance": "การเงิน",
+    "inventory": "สต็อกสินค้า",
+    "marketing": "การตลาด",
+    "ai_departments": "แผนก AI",
+    "logistics": "ขนส่งและนำเข้า",
+    "settings": "ตั้งค่าระบบ",
+    "approvals": "คิวอนุมัติ",
+    "pending_slips": "สลิปรอตรวจ",
+    "estimated_profit": "กำไรประมาณการ"
+  }
+}
